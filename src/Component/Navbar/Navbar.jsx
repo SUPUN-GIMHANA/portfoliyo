@@ -41,8 +41,8 @@ return (
                 <div className='head'>
                     <div className='topic co'>Home</div>
                     <div className='topic'><Link to="/about" className='link'>About</Link></div>
-                    <div className='topic'>Project</div>
-                    <div className='topic'>Contact</div>
+                    <div className='topic'><Link to="/Project" className='link'>Project</Link></div>
+                    <div className='topic'><Link to="/Contact" className='link'>Contact</Link></div>
                 </div>
             </div>
         
