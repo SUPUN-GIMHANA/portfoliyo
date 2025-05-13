@@ -1,0 +1,18 @@
+.justified-text {
+  text-align: justify;
+  text-justify: inter-word; /* Improves spacing for better readability */
+}
+
+.k{
+    width: 34%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 9%;
+    margin-top: 0%;
+    z-index: 2;
+    position: relative;
+    
+}
