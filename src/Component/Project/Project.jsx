@@ -44,24 +44,27 @@ const Project = () => {
           <div className='card'>
             
             <div className="ca card1">
+              <a href="https://github.com/SUPUN-GIMHANA/EverTea" target="_blank" rel="noopener noreferrer">
                 <img src={tea} alt="tea" className='tea' />
                 <div className="text1">Ever Tea</div>
               <div className="top"><p className='p'>Tea Research Institute (TRI) connects tea
-              cultivation with small-scale tea estate owners - Full Stack Development</p></div>
+              cultivation with small-scale tea estate owners - Full Stack Development</p></div></a>
             </div>
 
             <div className="ca card1">
+              <a href="https://github.com/SUPUN-GIMHANA/Ticket-Booking-System" target="_blank" rel="noopener noreferrer">
                 <img src={travelTicket} alt="tea" className='tea' />
                 <div className="text1">Ticket Booking</div>
               <div className="top"><p className='p'>Real-Time Event Ticketing System - Ful
-                  l Stack Development</p></div>
+                  l Stack Development</p></div></a>
             </div>
 
             <div className="ca card1">
+              <a href="https://github.com/SUPUN-GIMHANA/SG-Films" target="_blank" rel="noopener noreferrer">
                 <img src={sgFilms} alt="tea" className='tea' />
                 <div className="text1">SG Films</div>
               <div className="top"><p className='p'>Tea Research Institute (TRI) connects tea
-              cultivation with small-scale tea estate owners - Full Stack Development</p></div>
+              cultivation with small-scale tea estate owners - Full Stack Development</p></div></a>
             </div>
 
             <div className="ca card1">
