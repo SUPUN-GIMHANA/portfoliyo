@@ -1,6 +1,6 @@
 # Supun Gimhana - Portfolio Website
 
-![Portfolio Screenshot]([Screenshot 2025-05-13 194022.png](https://github.com/SUPUN-GIMHANA/portfoliyo/blob/main/Screenshot%202025-05-13%20194022.png?raw=true))
+![Portfolio Screenshot](https://github.com/SUPUN-GIMHANA/portfoliyo/blob/main/Screenshot%202025-05-13%20194022.png?raw=true)
 
 ## 🌟 Introduction
 
