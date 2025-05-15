@@ -230,7 +230,7 @@ const Contact = () => {
       </div>
 
       <div className='box'>
-        <div className=''>
+        <div className='z'>
           <div className='name1 nameColour'>Contact <span>me</span></div>
         </div>
       </div>
