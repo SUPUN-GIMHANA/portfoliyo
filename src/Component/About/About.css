@@ -16,3 +16,19 @@
     position: relative;
     
 }
+
+
+
+@media (max-width: 768px) {
+
+      .k {
+        width: 80%;
+        margin-left: 5%;
+        margin-top: 0;
+        text-align: center;
+    }
+      .hello {
+        font-size: 1.3rem;
+    }
+    
+}

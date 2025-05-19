@@ -85,7 +85,7 @@
 .ballbox1{
     width: 7%;
     height: 80%;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
     margin-left: -15%;
     margin-bottom: 10px;
 }
@@ -152,13 +152,6 @@
     position: relative;
     
 }
-
-
-
-
-
-
-
 
 
 
@@ -312,3 +305,321 @@ Keep all your other existing styles
 
 
 
+/* General Reset for All Elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  position: relative;
+  z-index: 2;
+  width: 45%;
+  margin-left: 7%;
+  margin-top: -2%;
+  background: none;
+  padding: 2rem;
+}
+
+.input-row {
+  display: flex;
+  gap: 30px;
+  margin-top: 15px;
+  background: none;
+  border-radius: 20px;
+}
+
+.input-container {
+  position: relative;
+  flex: 1;
+  height: 50px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  background: none;
+}
+
+.message-container {
+  height: 140px;
+  border-radius: 20px;
+  background: none;
+}
+
+.animated-input, .animated-textarea {
+  width: 100%;
+  height: 100%;
+  padding: 15px 15px 5px 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.animated-textarea {
+  resize: none;
+  padding-top: 20px;
+}
+
+.animated-input:focus, .animated-textarea:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 2px rgba(0, 212, 255, 0.5);
+}
+
+.input-label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  background: none;
+}
+
+.animated-input:focus + .input-label,
+.animated-input:not(:placeholder-shown) + .input-label,
+.animated-textarea:focus + .input-label,
+.animated-textarea:not(:placeholder-shown) + .input-label {
+  top: 5px;
+  left: 15px;
+  font-size: 0.8rem;
+  color: #00d4ff;
+}
+
+.input-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00d4ff, #0077ff);
+  transition: width 0.4s ease;
+}
+
+.animated-input:focus ~ .input-highlight,
+.animated-textarea:focus ~ .input-highlight {
+  width: 100%;
+}
+
+/* Send Button Animation */
+.send-button {
+  width: 150px;
+  height: 45px;
+  background: linear-gradient(135deg, #00d4ff, #0077ff);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+  margin-top: 20px;
+}
+
+.send-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 255, 255, 0.6);
+}
+
+.send-button:active {
+  transform: translateY(1px);
+}
+
+/* Copy Email Button Animation */
+.white1.copied {
+  background-color: #4CAF50;
+  animation: pulse 0.5s;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust contact form width for smaller screens */
+  .contact-form {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: -30px;
+  }
+
+  /* Adjust input field layout */
+  .input-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .input-container {
+    width: 100%;
+  }
+
+  .message-container {
+    width: 100%;
+  }
+
+  .send-button {
+    width: 100%;
+  }
+
+  /* Adjust copy email section */
+  .cv1 {
+    width: 90%;
+    margin-top: 10%;
+  }
+
+  /* Social Media Icons */
+  .socialMedia1 {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .com {
+    font-size: 20px;
+    bottom: 10%;
+    left: 5%;
+    width: 40%;
+  }
+
+  .ballbox1 {
+    width: 20%;
+    margin-left: -5%;
+  }
+
+  /* Avatar and Animation */
+  .blueContainer {
+    width: 100%;
+    position: relative;
+  }
+
+  .size {
+    width: 80%;
+    height: 70%;
+  }
+
+  .circleOverlay {
+    width: 30%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, -40%);
+  }
+
+  .me {
+    width: 25%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(75%, -40%);
+  }
+}
+
+@media (max-width: 480px) {
+  /* Full-width for mobile devices */
+  .contact-form {
+    width: 88%;
+    margin-left: 0;
+    padding: 1.5rem;
+  }
+
+  /* Stack inputs and adjust spacing */
+  .input-row {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .input-container {
+    width: 100%;
+  }
+
+  .message-container {
+    width: 100%;
+    height: 100px;
+  }
+
+  .send-button {
+    width: 100%;
+    padding: 15px;
+  }
+
+  /* Adjust email copy section */
+  .cv1 {
+    width: 90%;
+    margin-top: 8%;
+  }
+
+  /* Adjust social media section */
+  .socialMedia1 {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 15px;
+  }
+
+  /* Text section adjustments */
+  .com {
+    font-size: 18px;
+    bottom: 3%;
+    left: 1%;
+    width: 90%;
+  }
+
+  .ballbox1 {
+    width: 10%;
+    margin-left: -5%;
+  }
+
+  /* Avatar and background */
+  .blueContainer {
+    width: 100%;
+  }
+
+  .size {
+    width: 100%;
+    height: auto;
+  }
+
+  .circleOverlay {
+    width: 30%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, -40%);
+  }
+
+  .me {
+    width: 30%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(75%, -40%);
+  }
+
+  .cvtext{
+    font-size: 60%;
+  }
+
+  
+.name2 {
+  font-size: 1.2rem;  /* Smaller font size */
+  font-weight: 400;
+  margin-top: 5px;  /* Reduce the margin */
+  margin-bottom: 5px;
+}
+
+
+}
